@@ -1,0 +1,21 @@
+bool TopSort( Graph Graph, Vertex TopOrder[] )
+{ /* 对Graph进行拓扑排序,  TopOrder[]顺序存储排序后的顶点下标 */
+
+	遍历图，得到各顶点的入度Indegree[];
+
+	for( cnt=0; cnt<Graph->Nv; cnt++ ) {
+		V = 未输出的入度为0的顶点;
+		if ( 这样的V不存在 ) {
+           printf("图中有回路");
+           break;
+        }
+		TopOrder[cnt] = V; /* 将V存为结果序列的下一个元素 */
+		/* 将V及其出边从图中删除 */
+		for ( V的每个邻接点W )
+			Indegree[W]--;
+	}
+    if ( cnt != Graph->Nv )
+        return false; /* 说明图中有回路, 返回不成功标志 */ 
+    else
+        return true;
+}

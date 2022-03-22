@@ -1,0 +1,16 @@
+int Kruskal( LGraph Graph, LGraph MST )
+{ /* 将最小生成树保存为邻接表存储的图MST，返回最小权重和 */
+	MST = 包含所有顶点但没有边的图;
+    while( MST中收集的边不到Graph->Nv-1条 && 原图的边集E非空 ) {
+        从E中选择最小代价边(V, W); /* 引入最小堆完成 */
+        从E中删除此边(V, W);
+        if  ( (V, W)的选取不在MST中构成回路 ) /* 此判断由并查集的Find完成 */
+	        将(V, W)加入MST ; /* 此步由并查集的Union完成 */
+        else     
+	        彻底丢弃(V, W);
+    } /* 结束while */
+    if( MST中收集的边不到Graph->Nv-1条 )
+		return ERROR;
+	else
+		return 最小权重和;
+}

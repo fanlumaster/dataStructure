@@ -1,0 +1,5 @@
+1. MaxHeap CreateHeap( int MaxSize )：创建空的最大堆，其最大长度为MaxSize。
+2. bool IsFull( MaxHeap H )：判断最大堆H是否已满，若是返回true；否则返回false。
+3. bool Insert( MaxHeap H, ElementType X )：将元素X插入最大堆H。若堆已满，返回false；否则将数据元素X插入到堆H并返回true。
+4. bool IsEmpty( MaxHeap H )：判断最大堆H是否为空，若是返回true；否则返回false。
+5. ElementType DeleteMax( MaxHeap H )：删除并返回H中最大元素。

@@ -1,0 +1,6 @@
+1.	SymbolTable CreateTable( int TableSize )：创建空的符号表，其最大长度为TableSize。
+2.	bool IsIn( SymbolTable Table, NameType Name )：查找指定名字Name是否在符号表Table中，若是返回true；否则返回false。
+3.	AttributeType Find( SymbolTable Table, NameType Name )：获取符号表Table中指定名字Name对应的属性。
+4.	bool Modify( SymbolTable Table, NameType Name, AttributeType Attr )：将Table中指定名字Name的属性修改为Attr。成功返回true；找不到Name则返回false。
+5.	bool Insert( SymbolTable Table, NameType Name, AttributeType Attr )：向Table中插入一个新名字Name及其属性Attr。成功返回true；若Name已存在则返回false。
+6.	bool Delete( SymbolTable Table, NameType Name )：从Table中删除一个名字Name及其属性。成功返回true；找不到Name则返回false。

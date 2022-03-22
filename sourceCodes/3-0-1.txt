@@ -1,0 +1,6 @@
+1.	List MakeEmpty()：初始化一个新的空线性表。
+2.	ElementType FindKth( List L, int K )：根据指定的位序K，返回L中相应元素。
+3.	Position Find( List L, ElementType X )：已知X，返回线性表L中与X相同的第一个元素的位置；若不存在则返回错误信息。
+4.	bool Insert( List L, ElementType X, Position P )：在L的指定位置P前插入一个新元素X；成功则返回true，否则返回false。
+5.	bool Delete( List L, Position P )：从L中删除指定位置P的元素；成功则返回true，否则返回false。
+6.	int Length( List L )：返回线性表L的长度。

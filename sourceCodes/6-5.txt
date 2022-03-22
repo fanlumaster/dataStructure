@@ -1,0 +1,10 @@
+/* Visited[]为全局变量，已经初始化为false */
+void DFS( Graph G, Vertex V, void (*Visit)(Vertex) )
+{   /* 从第V个顶点出发递归地深度优先遍历图G */
+	Visit( V ); /* 访问第V个顶点 */
+	Visited[V] = true;
+	for ( V 的每个邻接点 W )
+		if ( !Visited[W] )
+			/* 对V的尚未访问的邻接顶点W递归调用DFS */
+			DFS( G, W, Visit );
+}

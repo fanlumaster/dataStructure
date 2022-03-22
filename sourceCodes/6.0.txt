@@ -1,0 +1,6 @@
+1. Graph CreateGraph( int VertexNum )：构造一个有VertexNum个顶点但没有边的图。
+2. void InsertEdge( Graph G, Edge E )：在G中增加新边E。
+3. void DeleteEdge( Graph G, Edge E )：从G中删除边E。
+4. bool IsEmpty( Graph G )：如果图G为空，返回true， 否则返回false。
+5. void DFS( Graph G, Vertex V, (*Visit)(Vertex) )：在图G中，从顶点V出发进行深度优先遍历；
+6. void BFS( Graph G, Vertex V, (*Visit)(Vertex) )：在图G中，从顶点V出发进行广度优先遍历；

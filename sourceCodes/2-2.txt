@@ -1,0 +1,8 @@
+ElementType FindKthLargest( ElementType S[], int K )
+{ /* 此为伪代码 */	
+	选取S中的第一个元素e;
+	根据e将集合S（不包含e）分解为大于等于e的元素集合S1和小于e的元素集合S2;
+	if ( |S1| >= K )       return FindKthLargest( S1, K );
+	else if ( |S1| < K-1 ) return FindKthLargest( S2, K-|S1|-1 );
+	else return e;  
+}
